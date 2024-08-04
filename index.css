@@ -1,0 +1,215 @@
+.app {
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+}
+.logo {
+  width: 100px;
+}
+.nav-items > ul {
+  font-size: 20px;
+  display: flex;
+  list-style-type: none;
+  color: #555869;
+}
+.nav-items > ul > li {
+  padding: 10px;
+}
+.nav-items > ul > li:hover {
+  color: #fea701;
+  cursor: pointer;
+}
+.res-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.res-header {
+  margin: 0px 0 20px 55px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgba(2, 6, 12, 0.92);
+}
+.res-card {
+  width: 300px;
+  margin: 1%;
+  border-radius: 0.5rem;
+  /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45); */
+  padding-bottom: 1rem;
+  transition: transform 0.5s;
+}
+.res-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.search {
+  padding: 10px;
+}
+.res-logo {
+  border-radius: 0.5rem;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+.res-description {
+  font-size: 1.25rem;
+  padding: 1rem;
+
+  .name {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.92);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+  }
+  .rating-delivery-wrapper {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgba(2, 6, 12, 0.92);
+    overflow: hidden;
+    width: 100%;
+  }
+  .rating-delivery-wrapper > div:nth-child(2) {
+    margin-right: 10px;
+  }
+  .rating {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 0 15px 0 0;
+    border-radius: 20px;
+    clear: both;
+  }
+
+  .bad {
+    background-color: red;
+  }
+
+  .average {
+    background-color: orange;
+  }
+
+  .good {
+    background-color: green;
+  }
+  .cuisines {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5px;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-box-orient: vertical;
+  }
+  .costForTwo {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.92);
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5px;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-box-orient: vertical;
+  }
+}
+.searchInputWrapper {
+  text-align: center;
+  margin: 10px;
+}
+
+.searchInput {
+  border: 1px solid black;
+  width: 20rem;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+::placeholder {
+  color: #a1a1a1;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px;
+}
+
+.searchInput:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.searchInputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: #a1a1a1;
+  transition: all 0.1s ease-in-out;
+}
+
+.searchInputWrapper:focus-within > .searchInputIcon {
+  right: 0.2rem;
+}
+.category-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+  padding: 10px;
+}
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+.category-header {
+  margin: 0px 0 20px 55px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgba(2, 6, 12, 0.92);
+}
+.category-card {
+  margin: 1%;
+  border-radius: 0.5rem;
+  /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45); */
+  padding-bottom: 1rem;
+  transition: transform 0.5s;
+}
+.category-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.category-logo {
+  width: 200px;
+  height: 35vh;
+}
