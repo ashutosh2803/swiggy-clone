@@ -2,7 +2,7 @@
 ---
 ## Running the app
 
-### To run the deployed app visit -  https://expense-manager-v2-0.vercel.app/
+### To run the deployed app visit -  https://swiggy-clone-rho-azure.vercel.app/
 
 To run the app locally, 
 
