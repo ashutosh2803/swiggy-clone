@@ -179,7 +179,6 @@
 }
 .category-container {
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-evenly;
@@ -213,4 +212,19 @@
 .category-logo {
   width: 200px;
   height: 35vh;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+.filter > button {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.filter > button:hover {
+  border: 1px solid black;
 }
