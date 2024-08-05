@@ -199,11 +199,12 @@
   color: rgba(2, 6, 12, 0.92);
 }
 .category-card {
-  margin: 1%;
   border-radius: 0.5rem;
   /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45); */
   padding-bottom: 1rem;
   transition: transform 0.5s;
+  /* width: 100%; */
+  padding-right: 24px;
 }
 .category-card:hover {
   cursor: pointer;
