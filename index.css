@@ -216,9 +216,54 @@
 .filter {
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 40px 10px 40px;
+
+  select:focus option[disabled] {
+    display: none;
+  }
+  select {
+    font-weight: bold;
+    letter-spacing: 0.2ch;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+  .select-container::after {
+    content: "▼"; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust this value to control the icon's position */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  select:focus {
+    outline: none;
+    border: 1px solid black;
+  }
+  select option {
+    font-weight: bold;
+    letter-spacing: 0.2ch;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+  select option:hover {
+    background-color: lightgray;
+  }
 }
 .filter > button {
+  letter-spacing: 0.2ch;
   font-weight: bold;
   padding: 10px;
   border: 1px solid white;
