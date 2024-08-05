@@ -22,8 +22,8 @@ To run the app locally,
 ### HomePage
 
 - 1 
-  ![Swiggy Clone](./assets/screenshots/HomePage1.png)
+  ![Swiggy Clone](./assets/screenshots/HomePage0.png)
 - 2 
-  ![Swiggy Clone](./assets/screenshots/HomePage2.png)
+  ![Swiggy Clone](./assets/screenshots/HomePage1.png)
     
 If you liked my work, please give a star!⭐️
