@@ -26,12 +26,11 @@
   cursor: pointer;
 }
 .res-container {
-  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  padding-inline: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 .res-header {
   margin: 0px 0 20px 55px;
@@ -162,15 +161,7 @@
 
 .searchInput:focus {
   outline: none;
-  transform: scale(1.1);
-  transition: all 0.1s ease-in-out;
-}
-
-.searchInputIcon {
-  position: absolute;
-  right: 0.8rem;
-  top: 0.5rem;
-  color: #a1a1a1;
+  transform: scale(1.05);
   transition: all 0.1s ease-in-out;
 }
 
@@ -262,7 +253,8 @@
     background-color: lightgray;
   }
 }
-.filter > button {
+.filter > button,
+.searchButton {
   letter-spacing: 0.2ch;
   font-weight: bold;
   padding: 10px;
@@ -270,6 +262,29 @@
   border-radius: 10px;
   margin: 0 10px;
 }
-.filter > button:hover {
+.filter > button:hover,
+.searchButton:hover {
   border: 1px solid black;
+}
+.shimmer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.shimmerRestaurantCard {
+  width: 300px;
+  margin: 1%;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+.shimmerCategoryCard {
+  width: 200px;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  padding-bottom: 1rem;
+  height: 35vh;
+  padding-right: 24px;
 }
