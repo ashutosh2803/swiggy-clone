@@ -102,6 +102,7 @@ const Body = () => {
             console.log("filteredRestaurant", filteredRestaurant);
 
             setFilteredRestaurant(filteredRestaurant);
+            setSearchQuery("");
           }}
         >
           Search
