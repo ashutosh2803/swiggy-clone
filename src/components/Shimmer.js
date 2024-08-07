@@ -5,8 +5,14 @@ const Shimmer = ({ count, type }) => {
       : type === "categoryCard"
       ? "shimmerCategoryCard"
       : "";
+  const containerClass =
+    type === "restaurantCard"
+      ? "shimmer-restaurant-container"
+      : type === "categoryCard"
+      ? "shimmer-category-container"
+      : "";
   return (
-    <div className="shimmer-container">
+    <div className={containerClass}>
       {[...Array(count)].map((e, i) => (
         <div className={cardClass} key={i}></div>
       ))}

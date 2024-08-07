@@ -12,7 +12,7 @@ const WhatsOnYourMind = () => {
   return (
     <div>
       <div className="category-header">What's on your mind?</div>
-      {categories.length === 0 ? (
+      {categoriesData.length === 0 ? (
         <Shimmer count={10} type="categoryCard" />
       ) : (
         <div className="category-container">

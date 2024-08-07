@@ -14,10 +14,6 @@ const Body = () => {
 
   useEffect(() => {
     // fetchData();
-    // setInterval(() => {
-    //   setFilteredRestaurant(resList);
-    // }, 1000);
-    // return clearInterval();
   }, []);
 
   const fetchData = async () => {

@@ -266,12 +266,23 @@
 .searchButton:hover {
   border: 1px solid black;
 }
-.shimmer-container {
+.shimmer-restaurant-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+.shimmer-category-container {
+  margin-left: 5px;
+  display: flex;
+  height: 38vh;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+  padding: 10px;
+}
+.shimmer-category-container::-webkit-scrollbar {
+  display: none;
+}
 .shimmerRestaurantCard {
   width: 300px;
   margin: 1%;
@@ -281,10 +292,9 @@
   background-color: #f0f0f0;
 }
 .shimmerCategoryCard {
-  width: 200px;
+  width: 300px;
+  margin: 1%;
   border-radius: 0.5rem;
   background-color: #f0f0f0;
-  padding-bottom: 1rem;
-  height: 35vh;
-  padding-right: 24px;
+  padding: 90px;
 }
